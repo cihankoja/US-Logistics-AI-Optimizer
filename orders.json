@@ -3,21 +3,18 @@
         "order_id": 101,
         "customer": "John Doe",
         "distance_miles": 3.2,
-        "is_rush_hour": true,
-        "weather": "Clear"
+        "is_rush_hour": true
     },
     {
         "order_id": 102,
         "customer": "Jane Smith",
         "distance_miles": 8.5,
-        "is_rush_hour": false,
-        "weather": "Heavy Rain"
+        "is_rush_hour": false
     },
     {
         "order_id": 103,
         "customer": "Bob Wilson",
         "distance_miles": 1.5,
-        "is_rush_hour": true,
-        "weather": "Snow"
+        "is_rush_hour": true
     }
 ]

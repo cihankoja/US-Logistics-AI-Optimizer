@@ -26,12 +26,13 @@ The system generates a dual-panel analytical dashboard for operational oversight
 
 ## Technical Stack
 - **Language:** Python 3.14.2
-- **Libraries:** `matplotlib` (Visualization), `requests` (API Handling), `json` (Data Storage)
+- **Libraries:** `matplotlib` (Visualization), `requests` (API Handling), `json` (Data Storage), `unittest` (Regression Testing)
 - **API:** Open-Meteo (Real-time NYC Weather)
 
 ## Project Structure
 - `main.py`: The orchestrator that runs the entire pipeline.
 - `analytics.py`: The core logic engine containing the `LogisticsEngine` class.
+- `tests.py`: Unit tests for validating pricing and safety algorithms.
 - `orders.json`: Data source containing driver IDs, routes, and base mileage.
 - `logistics_dashboard.png`: The automated visual output.
 
@@ -41,3 +42,6 @@ The system generates a dual-panel analytical dashboard for operational oversight
 3. Run the application: 
    ```bash
    python main.py
+4. Test the application:
+    ```bash
+   python tests.py

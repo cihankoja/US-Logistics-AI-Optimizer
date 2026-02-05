@@ -1,17 +1,36 @@
-# US Smart Logistics & Pricing Engine
+# US Logistics AI Optimizer (v2.5)
 
-A professional Python automation tool designed for the US logistics market. This project integrates **Dynamic Surge Pricing**, **Automated Data Processing**, and **AI-driven Trend Analysis**.
+An intelligent logistics pricing engine that combines **historical data analysis**, **real-time weather conditions**, and **AI-driven predictions**.
 
-## Why This Project?
-Built with **Google IT Automation Professional Certificate** standards, focusing on:
-- **Modular OOP:** Clean, maintainable Python classes.
-- **Predictive Analytics:** Uses historical data to forecast future delivery costs.
-- **Unit Testing:** 100% test coverage for core logic to ensure reliability.
+---
 
-## 🛠 Tech Stack
-- **Language:** Python 3.10+
-- **Libraries:** Matplotlib (Visuals), Statistics (AI Logic), Unittest
-- **Data Format:** JSON
+##  Key Features
+**Live NYC Weather Integration:** Automatically fetches real-time weather data from New York via Open-Meteo API.
+**Dynamic Pricing:** Calculates logistics costs using a weather-based surge multiplier ($°F$ support).
+**AI Insights:** Predicts market volatility and future pricing trends using a specialized `DeliveryAI` engine.
+**Data Visualization:** Generates automated price trend reports for stakeholders.
 
-## Analytics Output
-The system automatically generates a `price_trend.png` graph analyzing the market volatility and predicted price points, helping companies optimize their driver payouts.
+---
+
+## Live Market Analysis
+The following graph shows the real-time price fluctuations based on the latest New York market conditions and AI predictions:
+
+![US Market Price Trend](price_trend.png)
+
+> **Current Market Status:** The system is currently monitoring New York City (40.71, -74.00) for real-time adjustments.
+
+---
+
+## Technical Stack
+* **Language:** Python 3.14.2
+* **Data Handling:** JSON & Python Dictionaries
+* **API:** Open-Meteo (Real-time Weather)
+* **Visualization:** Matplotlib
+* **Version Control:** Git & GitHub
+
+---
+
+## 🚀 How to Run
+1. Install dependencies:
+   ```bash
+   pip install requests matplotlib

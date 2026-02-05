@@ -1,0 +1,4 @@
+__pycache__/
+*.log
+*.txt
+price_trend.png

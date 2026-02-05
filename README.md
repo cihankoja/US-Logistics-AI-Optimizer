@@ -1,36 +1,43 @@
-# US Logistics AI Optimizer (v2.5)
+# NYC Smart Logistics & Dynamic Pricing Engine
 
-An intelligent logistics pricing engine that combines **historical data analysis**, **real-time weather conditions**, and **AI-driven predictions**.
+A professional-grade logistics analytics tool designed for New York City fleet operations. This engine integrates real-time weather APIs and temporal traffic data to calculate high-precision **Dynamic Pricing** and **Safety-Adjusted ETA**.
 
----
+## Live Dashboard Preview
+The system generates a dual-panel analytical dashboard for operational oversight:
+![Logistics Dashboard](logistics_dashboard.png)
 
-##  Key Features
-**Live NYC Weather Integration:** Automatically fetches real-time weather data from New York via Open-Meteo API.
-**Dynamic Pricing:** Calculates logistics costs using a weather-based surge multiplier ($°F$ support).
-**AI Insights:** Predicts market volatility and future pricing trends using a specialized `DeliveryAI` engine.
-**Data Visualization:** Generates automated price trend reports for stakeholders.
+## Core Features
 
----
+### 1. Intelligent Pricing (Surge Logic)
+- **Traffic Multiplier:** Automatically detects NYC rush hours (08:00-10:00 & 16:00-19:00) and applies a **1.35x** surge.
+- **Weather Impact:** Integrates Open-Meteo API to apply pricing multipliers based on rain, snow, or storm conditions.
+- **Hazard Surcharge:** Detects "Freezing Cold" (temp ≤ 32°F) and adds a significant risk premium to the final price.
 
-## Live Market Analysis
-The following graph shows the real-time price fluctuations based on the latest New York market conditions and AI predictions:
+### 2. Operational ETA Analysis
+- **Imperial System:** All distances are processed in **Miles** and speeds in **MPH**.
+- **Dynamic Speed Adjustment:**
+  - **Normal:** 25 MPH average city speed.
+  - **Hazardous (Icy/Snowy):** Automatically throttles to 15 MPH for safety-first estimation.
+- **Route Tracking:** Visualizes specific NYC routes (e.g., Manhattan to Brooklyn) with real-time delay markers.
 
-![US Market Price Trend](price_trend.png)
-
-> **Current Market Status:** The system is currently monitoring New York City (40.71, -74.00) for real-time adjustments.
-
----
+### 3. Professional Visuals
+- **Orange/Blue Palette:** High-contrast color scheme for quick data readability.
+- **Hazard Alerts:** Red-themed visual warnings triggered during freezing conditions or icy road detections.
 
 ## Technical Stack
-* **Language:** Python 3.14.2
-* **Data Handling:** JSON & Python Dictionaries
-* **API:** Open-Meteo (Real-time Weather)
-* **Visualization:** Matplotlib
-* **Version Control:** Git & GitHub
+- **Language:** Python 3.14.2
+- **Libraries:** `matplotlib` (Visualization), `requests` (API Handling), `json` (Data Storage)
+- **API:** Open-Meteo (Real-time NYC Weather)
 
----
+## Project Structure
+- `main.py`: The orchestrator that runs the entire pipeline.
+- `analytics.py`: The core logic engine containing the `LogisticsEngine` class.
+- `orders.json`: Data source containing driver IDs, routes, and base mileage.
+- `logistics_dashboard.png`: The automated visual output.
 
-## 🚀 How to Run
-1. Install dependencies:
+## How to Run
+1. Clone the repository.
+2. Install dependencies: `pip install requests matplotlib`
+3. Run the application: 
    ```bash
-   pip install requests matplotlib
+   python main.py

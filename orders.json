@@ -1,20 +1,30 @@
 [
-    {
-        "order_id": 101,
-        "customer": "John Doe",
-        "distance_miles": 3.2,
-        "is_rush_hour": true
-    },
-    {
-        "order_id": 102,
-        "customer": "Jane Smith",
-        "distance_miles": 8.5,
-        "is_rush_hour": false
-    },
-    {
-        "order_id": 103,
-        "customer": "Bob Wilson",
-        "distance_miles": 1.5,
-        "is_rush_hour": true
-    }
+  {
+    "order_id": "ORD-001",
+    "driver_id": 10001,
+    "route": "Manhattan -> Brooklyn",
+    "distance_miles": 8.5,
+    "base_price": 50
+  },
+  {
+    "order_id": "ORD-002",
+    "driver_id": 10002,
+    "route": "Queens -> Bronx",
+    "distance_miles": 15.2,
+    "base_price": 80
+  },
+  {
+    "order_id": "ORD-003",
+    "driver_id": 10003,
+    "route": "Jersey City -> Manhattan",
+    "distance_miles": 5.0,
+    "base_price": 40
+  },
+  {
+    "order_id": "ORD-004",
+    "driver_id": 10004,
+    "route": "Staten Island -> Brooklyn",
+    "distance_miles": 21.7,
+    "base_price": 110
+  }
 ]
